@@ -489,93 +489,70 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-gray-900 to-purple-900 text-white py-16">
+      <footer className="bg-gradient-to-br from-gray-900 to-purple-900 text-white py-8">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <MessageSquare className="w-6 h-6 text-purple-600" />
+          <div className="grid md:grid-cols-4 gap-8 text-left">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                  <MessageSquare className="w-5 h-5 text-purple-600" />
+                </div>
+                <span className="text-xl font-bold">sofIA</span>
               </div>
-              <span className="text-3xl font-bold">sofIA</span>
+              <p className="text-sm text-gray-300">
+                Transforme o WhatsApp em sua gateway de pagamento com conformidade ao protocolo AP2.
+              </p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para Começar?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
-              Transforme o WhatsApp em sua gateway de pagamento e reduza o churn em 90%+ com a sofIA
-            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-4 font-bold bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 shadow-xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
-              >
-                <Play className="mr-3 w-5 h-5" />
-                Iniciar Teste Grátis
-                <ArrowRight className="ml-3 w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="text-lg px-8 py-4 font-bold border-white text-white hover:bg-white hover:text-purple-600 transform hover:scale-105 transition-all duration-300"
-                onClick={() => startSofiaChat()}
-              >
-                <MessageSquare className="mr-3 w-5 h-5" />
-                Chat com sofIA
-              </Button>
+            <div>
+              <h3 className="font-semibold mb-3 text-white">Links Rápidos</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>
+                  <a href="#features" className="hover:text-white transition-colors">
+                    Recursos
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-it-works" className="hover:text-white transition-colors">
+                    Como Funciona
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Documentação
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/sofIA-Payment-Agent/sofIA-payment-agent" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    Código Fonte
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-3 text-white">Tecnologia</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>Protocolo AP2 do Google</li>
+                <li>WhatsApp Business API</li>
+                <li>Multi-Agent Architecture</li>
+                <li>BEMOBI Gateway</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-3 text-white">Suporte</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>24/7 Monitoramento</li>
+                <li>Logs de Auditoria</li>
+                <li>Conformidade AP2</li>
+                <li>Suporte Regional</li>
+              </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-700 pt-8">
-            <div className="grid md:grid-cols-3 gap-8 text-left">
-              <div>
-                <h3 className="font-semibold mb-4 text-white">Links Rápidos</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>
-                    <a href="#features" className="hover:text-white transition-colors">
-                      Recursos
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#how-it-works" className="hover:text-white transition-colors">
-                      Como Funciona
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Documentação
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sofIA-Payment-Agent/sofIA-payment-agent" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                      Código Fonte
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-4 text-white">Tecnologia</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>Protocolo AP2 do Google</li>
-                  <li>WhatsApp Business API</li>
-                  <li>Multi-Agent Architecture</li>
-                  <li>BEMOBI Gateway</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-4 text-white">Suporte</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>24/7 Monitoramento</li>
-                  <li>Logs de Auditoria</li>
-                  <li>Conformidade AP2</li>
-                  <li>Suporte Regional</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-              <p>&copy; 2025 sofIA - HACKTUDO 2025. Construído para integração BEMOBI em mercados LATAM, África e Ásia.</p>
-            </div>
+          <div className="mt-6 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
+            <p>&copy; 2025 sofIA - HACKTUDO 2025. Construído para integração BEMOBI em mercados LATAM, África e Ásia.</p>
           </div>
         </div>
       </footer>
