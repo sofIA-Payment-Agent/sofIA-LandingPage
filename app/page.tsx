@@ -124,17 +124,6 @@ export default function HomePage() {
                       backgroundPosition: 'center'
                     }}
                   >
-                    <img 
-                      alt="sofIA Character" 
-                      className="w-full h-auto max-h-[500px] object-contain"
-                      style={{width: '100%', height: 'auto'}}
-                      onLoad={() => console.log('sofIA character image loaded successfully')}
-                      onError={(e) => {
-                        console.error('sofIA character image failed to load:', e);
-                        console.log('Trying fallback to macacaProfile.png');
-                        e.currentTarget.src = '/macacaProfile.png';
-                      }}
-                    />
                   </div>
                 </div>
               </div>
