@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -5,30 +7,49 @@ import { CheckCircle, MessageSquare, Shield, Zap, Users, BarChart3, ArrowRight, 
 import Link from "next/link"
 
 export default function HomePage() {
+  const startSofiaChat = () => {
+    // Pre-filled message for sofIA
+    const message = "Hello sofIA! I'm interested in learning about your payment solutions. Can you show me how it works?";
+    
+    // WhatsApp URL with pre-filled message
+    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <MessageSquare className="w-5 h-5 text-primary-foreground" />
+        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <MessageSquare className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-2xl font-bold text-primary">sofIA</span>
+            <span className="text-4xl font-bold text-primary">sofIA</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+          <nav className="hidden md:flex items-center space-x-7">
+            <Link href="#features" className="text-base text-muted-foreground hover:text-foreground transition-colors">
               Features
             </Link>
-            <Link href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#pricing" className="text-base text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
-            <Button variant="outline" size="sm">
-              <Download className="w-4 h-4 mr-2" />
+            <Button variant="outline" size="default" asChild>
+              <a href="https://github.com/sofIA-Payment-Agent/sofIA-payment-agent" target="_blank" rel="noopener noreferrer">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+              </a>
+            </Button>
+            <Button variant="outline" size="default">
+              <Download className="w-5 h-5 mr-2" />
               Download Code
             </Button>
-            <Button size="sm">
-              <Play className="w-4 h-4 mr-2" />
+            <Button size="default">
+              <Play className="w-5 h-5 mr-2" />
               Start Free Trial
             </Button>
           </nav>
@@ -36,76 +57,88 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto text-center max-w-6xl">
-          <Badge variant="secondary" className="mb-6">
-            <Cpu className="w-4 h-4 mr-2" />
-            HACKTUDO 2025 - Production-Ready
-          </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance sofia-gradient-text-warm leading-tight">
-            Transforme o WhatsApp em Sua Gateway de Pagamento
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto text-pretty">
-            sofIA permite pagamentos seguros através do WhatsApp usando o Protocolo AP2 do Google. Construído para comerciantes BEMOBI em toda LATAM, África e Ásia.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8 py-6">
-              <Play className="mr-2 w-5 h-5" />
-              Iniciar Teste Grátis
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
-              <Play className="mr-2 w-5 h-5" />
-              Ver Demonstração
-            </Button>
-          </div>
+      <section className="relative min-h-screen flex items-start pt-20 px-1 overflow-hidden bg-white">
+        <div className="container mx-auto max-w-15xl relative z-10">
+          <div className="grid lg:grid-cols-2 gap-4 items-center">
+            
+            {/* Left Side - Text Content */}
+            <div className="order-1 text-center lg:text-left">
+              {/* Badge */}
+              <div className="inline-block mb-2">
+                <Badge variant="secondary" className="text-sm px-4 py-2 bg-purple-100 border border-purple-200 text-purple-800">
+                  <Cpu className="w-4 h-4 mr-2" />
+                  HACKTUDO 2025
+                </Badge>
+              </div>
+              
+              {/* Main Headline */}
+              <div className="mb-6">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-balance leading-[0.9] tracking-tight text-gray-900">
+                  <span className="block">Transforme</span>
+                  <span className="block sofia-gradient-text-cool">o WhatsApp</span>
+                  <span className="block">em seu</span>
+                  <span className="block sofia-gradient-text-warm">Gateway de</span>
+                  <span className="block sofia-gradient-text-cool">Pagamento</span>
+                </h1>
+              </div>
+              
+              {/* Description */}
+              <p className="text-xl text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                sofIA permite <span className="font-bold text-purple-700">pagamentos seguros</span> através do WhatsApp usando o <span className="font-bold text-purple-700">Protocolo AP2 do Google</span>. Construído para comerciantes BEMOBI em toda LATAM, África e Ásia.
+              </p>
+              
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-3">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 shadow-xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
+                >
+                  <Play className="mr-3 w-6 h-6" />
+                  Iniciar Teste Grátis
+                  <ArrowRight className="ml-3 w-6 h-6" />
+                </Button>
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-xl hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
+                  onClick={() => startSofiaChat()}
+                >
+                  <MessageSquare className="mr-3 w-6 h-6" />
+                  Chat com sofIA
+                </Button>
+              </div>
 
-          {/* Hero Visual */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="sofia-gradient-warm rounded-2xl p-8 border border-primary/20 shadow-lg">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-4">
-                  <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                        <MessageSquare className="w-4 h-4 text-white" />
-                      </div>
-                      <span className="font-medium text-gray-900">WhatsApp Business</span>
-                    </div>
-                    <div className="text-sm text-gray-700">
-                      Oi! Sua assinatura VIVO expira amanhã. Gostaria de renovar?
-                    </div>
-                    <Button size="sm" className="mt-2 sofia-purple">
-                      Renovar Agora - R$ 29,99
-                    </Button>
-                  </div>
-                  <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
-                    <div className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-primary" />
-                      <span className="text-sm text-gray-700">Pagamento processado com segurança via AP2</span>
-                    </div>
-                  </div>
+              {/* Key Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-1 max-w-2xl mx-auto lg:mx-0">
+                <div className="text-center p-2 bg-purple-50 rounded-xl border border-purple-200">
+                  <div className="text-2xl md:text-3xl font-black sofia-gradient-text-cool mb-1">99.9%</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Uptime</div>
                 </div>
-                <div className="space-y-4">
-                  <Badge variant="outline" className="w-fit bg-white/90 text-primary border-primary">
-                    Compatível com Protocolo AP2
-                  </Badge>
-                  <div className="text-left">
-                    <h3 className="font-semibold mb-2 text-white">Arquitetura Multi-Agente</h3>
-                    <div className="space-y-2 text-sm text-white/90">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                        <span>Agente Orquestrador</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-white/80 rounded-full"></div>
-                        <span>Agente de Pagamento</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-                        <span>Integração BEMOBI</span>
-                      </div>
+                <div className="text-center p-2 bg-purple-50 rounded-xl border border-purple-200">
+                  <div className="text-2xl md:text-3xl font-black sofia-gradient-text-warm mb-1">&lt; 2s</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Resposta</div>
+                </div>
+                <div className="text-center p-2 bg-purple-50 rounded-xl border border-purple-200">
+                  <div className="text-2xl md:text-3xl font-black sofia-gradient-text-cool mb-1">100%</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">AP2</div>
+                </div>
+                <div className="text-center p-2 bg-purple-50 rounded-xl border border-purple-200">
+                  <div className="text-2xl md:text-3xl font-black sofia-gradient-text-warm mb-1">90%+</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Menos Churn</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Video Placeholder */}
+            <div className="order-2">
+              <div className="relative">
+                {/* Video Placeholder */}
+                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl border-2 border-purple-300 shadow-2xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Play className="w-10 h-10 text-white ml-1" />
                     </div>
+                    <p className="text-purple-700 font-semibold text-lg">Video Placeholder</p>
+                    <p className="text-purple-600 text-sm">Your video will go here</p>
                   </div>
                 </div>
               </div>
@@ -140,9 +173,17 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Principais Recursos</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Tudo que você precisa para transformar o WhatsApp em uma gateway de pagamento segura
             </p>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-xl hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
+              onClick={() => startSofiaChat()}
+            >
+              <MessageSquare className="mr-3 w-6 h-6" />
+              Try sofIA - Start a conversation
+            </Button>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -385,6 +426,18 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Sticky Chat Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button 
+          size="lg"
+          className="w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-2xl hover:shadow-green-500/25 transform hover:scale-110 transition-all duration-300 animate-pulse"
+          onClick={() => startSofiaChat()}
+        >
+          <i className="fa-brands fa-whatsapp text-white text-2xl"></i>
+        </Button>
+      </div>
+
     </div>
   )
 }
