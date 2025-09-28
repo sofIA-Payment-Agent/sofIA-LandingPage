@@ -42,7 +42,7 @@ export default function HomePage() {
             <Cpu className="w-4 h-4 mr-2" />
             HACKTUDO 2025 - Production-Ready
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance sofia-gradient-text">
             Transform WhatsApp into Your Payment Gateway
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto text-pretty">
@@ -62,47 +62,47 @@ export default function HomePage() {
 
           {/* Hero Visual */}
           <div className="relative max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 border">
+            <div className="sofia-gradient rounded-2xl p-8 border border-primary/20 shadow-lg">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-4">
-                  <div className="bg-card rounded-lg p-4 border shadow-sm">
+                  <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                        <MessageSquare className="w-4 h-4 text-accent-foreground" />
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <MessageSquare className="w-4 h-4 text-white" />
                       </div>
-                      <span className="font-medium">WhatsApp Business</span>
+                      <span className="font-medium text-gray-900">WhatsApp Business</span>
                     </div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-sm text-gray-700">
                       Hi! Your VIVO subscription expires tomorrow. Would you like to renew?
                     </div>
-                    <Button size="sm" className="mt-2">
+                    <Button size="sm" className="mt-2 sofia-purple">
                       Renew Now - $29.99
                     </Button>
                   </div>
-                  <div className="bg-card rounded-lg p-4 border shadow-sm">
+                  <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
                     <div className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-accent" />
-                      <span className="text-sm">Payment processed securely via AP2</span>
+                      <CheckCircle className="w-5 h-5 text-primary" />
+                      <span className="text-sm text-gray-700">Payment processed securely via AP2</span>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <Badge variant="outline" className="w-fit">
+                  <Badge variant="outline" className="w-fit bg-white/90 text-primary border-primary">
                     AP2 Protocol Compliant
                   </Badge>
                   <div className="text-left">
-                    <h3 className="font-semibold mb-2">Multi-Agent Architecture</h3>
-                    <div className="space-y-2 text-sm text-muted-foreground">
+                    <h3 className="font-semibold mb-2 text-white">Multi-Agent Architecture</h3>
+                    <div className="space-y-2 text-sm text-white/90">
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <div className="w-2 h-2 bg-white rounded-full"></div>
                         <span>Orchestrator Agent</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                        <div className="w-2 h-2 bg-white/80 rounded-full"></div>
                         <span>Payment Agent</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-accent rounded-full"></div>
+                        <div className="w-2 h-2 bg-white/60 rounded-full"></div>
                         <span>BEMOBI Integration</span>
                       </div>
                     </div>
@@ -280,23 +280,23 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+              <div className="text-4xl font-bold sofia-gradient-text mb-2">99.9%</div>
               <div className="text-lg font-semibold mb-2">Uptime Target</div>
               <div className="text-sm text-muted-foreground">Enterprise-grade reliability</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-secondary mb-2">&lt; 2s</div>
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-secondary/10 to-secondary/5 border border-secondary/20">
+              <div className="text-4xl font-bold sofia-gradient-text mb-2">&lt; 2s</div>
               <div className="text-lg font-semibold mb-2">Response Time</div>
               <div className="text-sm text-muted-foreground">Lightning-fast processing</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">100%</div>
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20">
+              <div className="text-4xl font-bold sofia-gradient-text mb-2">100%</div>
               <div className="text-lg font-semibold mb-2">AP2 Compliance</div>
               <div className="text-sm text-muted-foreground">Full protocol implementation</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">90%+</div>
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+              <div className="text-4xl font-bold sofia-gradient-text mb-2">90%+</div>
               <div className="text-lg font-semibold mb-2">Churn Reduction</div>
               <div className="text-sm text-muted-foreground">Measured business impact</div>
             </div>
