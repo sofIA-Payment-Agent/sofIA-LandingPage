@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "sofIA - AI-Powered WhatsApp Payment Agent | AP2 Protocol",
+  title: "sofIA",
   description:
     "Transform WhatsApp into your payment gateway with sofIA. Secure subscription management and payments using Google's AP2 Protocol for telecom operators.",
   generator: "v0.app",

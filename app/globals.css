@@ -133,4 +133,31 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* Full-screen section styles for layered design */
+  .full-screen-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .full-screen-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
 }
