@@ -79,7 +79,7 @@
     @apply text-foreground/70;
   }
   
-  /* sofIA Brand Colors */
+  /* sofIA Brand Colors - Multiple Shades */
   .sofia-purple {
     @apply bg-[#7B24E0] text-white;
   }
@@ -89,11 +89,46 @@
   .sofia-purple-dark {
     @apply bg-[#5A1A9E] text-white;
   }
+  .sofia-purple-deep {
+    @apply bg-[#4A148C] text-white;
+  }
+  .sofia-purple-bright {
+    @apply bg-[#AB47BC] text-white;
+  }
+  .sofia-purple-soft {
+    @apply bg-[#CE93D8] text-gray-900;
+  }
+  .sofia-purple-pale {
+    @apply bg-[#E1BEE7] text-gray-800;
+  }
+  
+  /* sofIA Gradients - Different Variations */
   .sofia-gradient {
     background: linear-gradient(135deg, #7B24E0 0%, #9B4EE8 100%);
   }
   .sofia-gradient-text {
     background: linear-gradient(135deg, #7B24E0 0%, #9B4EE8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .sofia-gradient-warm {
+    background: linear-gradient(135deg, #7B24E0 0%, #AB47BC 50%, #9B4EE8 100%);
+  }
+  .sofia-gradient-cool {
+    background: linear-gradient(135deg, #4A148C 0%, #7B24E0 50%, #5A1A9E 100%);
+  }
+  .sofia-gradient-soft {
+    background: linear-gradient(135deg, #9B4EE8 0%, #CE93D8 50%, #E1BEE7 100%);
+  }
+  .sofia-gradient-text-warm {
+    background: linear-gradient(135deg, #7B24E0 0%, #AB47BC 50%, #9B4EE8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .sofia-gradient-text-cool {
+    background: linear-gradient(135deg, #4A148C 0%, #7B24E0 50%, #5A1A9E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

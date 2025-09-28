@@ -42,27 +42,27 @@ export default function HomePage() {
             <Cpu className="w-4 h-4 mr-2" />
             HACKTUDO 2025 - Production-Ready
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance sofia-gradient-text">
-            Transform WhatsApp into Your Payment Gateway
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance sofia-gradient-text-warm">
+            Transforme o WhatsApp em Sua Gateway de Pagamento
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto text-pretty">
-            sofIA enables secure payments through WhatsApp using Google's AP2 Protocol. Built for BEMOBI's merchants across LATAM, Africa, and Asia.
+            sofIA permite pagamentos seguros através do WhatsApp usando o Protocolo AP2 do Google. Construído para comerciantes BEMOBI em toda LATAM, África e Ásia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="text-lg px-8 py-6">
               <Play className="mr-2 w-5 h-5" />
-              Start Free Trial
+              Iniciar Teste Grátis
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
               <Play className="mr-2 w-5 h-5" />
-              Watch Demo
+              Ver Demonstração
             </Button>
           </div>
 
           {/* Hero Visual */}
           <div className="relative max-w-4xl mx-auto">
-            <div className="sofia-gradient rounded-2xl p-8 border border-primary/20 shadow-lg">
+            <div className="sofia-gradient-warm rounded-2xl p-8 border border-primary/20 shadow-lg">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-4">
                   <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
@@ -73,37 +73,37 @@ export default function HomePage() {
                       <span className="font-medium text-gray-900">WhatsApp Business</span>
                     </div>
                     <div className="text-sm text-gray-700">
-                      Hi! Your VIVO subscription expires tomorrow. Would you like to renew?
+                      Oi! Sua assinatura VIVO expira amanhã. Gostaria de renovar?
                     </div>
                     <Button size="sm" className="mt-2 sofia-purple">
-                      Renew Now - $29.99
+                      Renovar Agora - R$ 29,99
                     </Button>
                   </div>
                   <div className="bg-white/90 rounded-lg p-4 border shadow-sm">
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="w-5 h-5 text-primary" />
-                      <span className="text-sm text-gray-700">Payment processed securely via AP2</span>
+                      <span className="text-sm text-gray-700">Pagamento processado com segurança via AP2</span>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <Badge variant="outline" className="w-fit bg-white/90 text-primary border-primary">
-                    AP2 Protocol Compliant
+                    Compatível com Protocolo AP2
                   </Badge>
                   <div className="text-left">
-                    <h3 className="font-semibold mb-2 text-white">Multi-Agent Architecture</h3>
+                    <h3 className="font-semibold mb-2 text-white">Arquitetura Multi-Agente</h3>
                     <div className="space-y-2 text-sm text-white/90">
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-white rounded-full"></div>
-                        <span>Orchestrator Agent</span>
+                        <span>Agente Orquestrador</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-white/80 rounded-full"></div>
-                        <span>Payment Agent</span>
+                        <span>Agente de Pagamento</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-                        <span>BEMOBI Integration</span>
+                        <span>Integração BEMOBI</span>
                       </div>
                     </div>
                   </div>
@@ -115,22 +115,22 @@ export default function HomePage() {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-purple-100/50">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">The Problem & Solution</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">O Problema e a Solução</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-destructive">The Challenge</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-red-600">O Desafio</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                30-40% of customers forget to renew subscriptions, leading to massive churn and lost revenue for telecom operators.
+                30-40% dos clientes esquecem de renovar assinaturas, causando grande churn e perda de receita para operadoras de telecomunicações.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-accent">The Solution</h3>
+              <h3 className="text-2xl font-semibold mb-4 sofia-gradient-text-cool">A Solução</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                sofIA automates subscription management through WhatsApp conversations, reducing churn by 90%+ with AP2-compliant security.
+                sofIA automatiza o gerenciamento de assinaturas através de conversas no WhatsApp, reduzindo churn em 90%+ com segurança compatível com AP2.
               </p>
-            </div>
+                  </div>
           </div>
         </div>
       </section>
@@ -139,69 +139,69 @@ export default function HomePage() {
       <section id="features" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Key Features</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Principais Recursos</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to transform WhatsApp into a secure payment gateway
+              Tudo que você precisa para transformar o WhatsApp em uma gateway de pagamento segura
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-400/50 transition-colors bg-gradient-to-br from-purple-50 to-purple-100/30">
               <CardHeader>
-                <Shield className="w-12 h-12 text-primary mb-4" />
-                <CardTitle>AP2 Protocol Compliance</CardTitle>
+                <Shield className="w-12 h-12 text-purple-600 mb-4" />
+                <CardTitle>Conformidade com Protocolo AP2</CardTitle>
                 <CardDescription>
-                  Full implementation of Google's latest payment protocol with enterprise-grade security
+                  Implementação completa do mais recente protocolo de pagamento do Google com segurança de nível empresarial
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-500/50 transition-colors bg-gradient-to-br from-purple-100 to-purple-200/30">
               <CardHeader>
-                <MessageSquare className="w-12 h-12 text-secondary mb-4" />
-                <CardTitle>WhatsApp Integration</CardTitle>
+                <MessageSquare className="w-12 h-12 text-purple-700 mb-4" />
+                <CardTitle>Integração WhatsApp</CardTitle>
                 <CardDescription>
-                  No app downloads required - customers pay directly through WhatsApp conversations
+                  Nenhum download de app necessário - clientes pagam diretamente através de conversas no WhatsApp
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-600/50 transition-colors bg-gradient-to-br from-purple-200 to-purple-300/30">
               <CardHeader>
-                <Users className="w-12 h-12 text-accent mb-4" />
-                <CardTitle>Multi-Agent Architecture</CardTitle>
+                <Users className="w-12 h-12 text-purple-800 mb-4" />
+                <CardTitle>Arquitetura Multi-Agente</CardTitle>
                 <CardDescription>
-                  Sophisticated AI orchestration for complex payment workflows and customer service
+                  Orquestração sofisticada de IA para fluxos de trabalho de pagamento complexos e atendimento ao cliente
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-400/50 transition-colors bg-gradient-to-br from-purple-50 to-purple-100/30">
               <CardHeader>
-                <Globe className="w-12 h-12 text-primary mb-4" />
-                <CardTitle>Regional Support</CardTitle>
+                <Globe className="w-12 h-12 text-purple-600 mb-4" />
+                <CardTitle>Suporte Regional</CardTitle>
                 <CardDescription>
-                  LATAM, Africa, Asia payment methods - PIX, Mobile Money, Digital Wallets
+                  Métodos de pagamento LATAM, África, Ásia - PIX, Mobile Money, Carteiras Digitais
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-500/50 transition-colors bg-gradient-to-br from-purple-100 to-purple-200/30">
               <CardHeader>
-                <Zap className="w-12 h-12 text-secondary mb-4" />
-                <CardTitle>Real-time Processing</CardTitle>
+                <Zap className="w-12 h-12 text-purple-700 mb-4" />
+                <CardTitle>Processamento em Tempo Real</CardTitle>
                 <CardDescription>
-                  &lt; 2 second response times with complete audit trails and monitoring
+                  Tempos de resposta &lt; 2 segundos com trilhas de auditoria completas e monitoramento
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
+            <Card className="border-2 hover:border-purple-600/50 transition-colors bg-gradient-to-br from-purple-200 to-purple-300/30">
               <CardHeader>
-                <Shield className="w-12 h-12 text-accent mb-4" />
-                <CardTitle>Security First</CardTitle>
+                <Shield className="w-12 h-12 text-purple-800 mb-4" />
+                <CardTitle>Segurança em Primeiro Lugar</CardTitle>
                 <CardDescription>
-                  RSA-2048 digital signatures and enterprise-grade security for all transactions
+                  Assinaturas digitais RSA-2048 e segurança de nível empresarial para todas as transações
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -210,57 +210,57 @@ export default function HomePage() {
       </section>
 
       {/* Target Customer Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-100/50 to-purple-200/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Built for Industry Leaders</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Construído para Líderes da Indústria</h2>
             <p className="text-lg text-muted-foreground">
-              Designed specifically for BEMOBI and major telecom operators
+              Projetado especificamente para BEMOBI e grandes operadoras de telecomunicações
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
+            <Card className="p-8 bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl">Primary: BEMOBI</CardTitle>
-                <CardDescription className="text-lg">Mobile Payment Gateway Provider</CardDescription>
+                <CardTitle className="text-2xl sofia-gradient-text-cool">Principal: BEMOBI</CardTitle>
+                <CardDescription className="text-lg">Provedor de Gateway de Pagamento Móvel</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>New revenue stream opportunity</span>
+                    <CheckCircle className="w-5 h-5 text-purple-600" />
+                    <span>Nova oportunidade de fluxo de receita</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>Competitive differentiation</span>
+                    <CheckCircle className="w-5 h-5 text-purple-600" />
+                    <span>Diferenciação competitiva</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>Reduced support costs</span>
+                    <CheckCircle className="w-5 h-5 text-purple-600" />
+                    <span>Custos de suporte reduzidos</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="p-8">
+            <Card className="p-8 bg-gradient-to-br from-purple-100/50 to-purple-200/50 border-purple-300">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl">Secondary: Telecom Operators</CardTitle>
+                <CardTitle className="text-2xl sofia-gradient-text-warm">Secundário: Operadoras de Telecom</CardTitle>
                 <CardDescription className="text-lg">VIVO, CLARO, OI, TIM</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>90%+ churn reduction</span>
+                    <CheckCircle className="w-5 h-5 text-purple-700" />
+                    <span>Redução de churn de 90%+</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>Seamless WhatsApp integration</span>
+                    <CheckCircle className="w-5 h-5 text-purple-700" />
+                    <span>Integração perfeita com WhatsApp</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span>AP2 compliance guarantee</span>
+                    <CheckCircle className="w-5 h-5 text-purple-700" />
+                    <span>Garantia de conformidade AP2</span>
                   </div>
                 </div>
               </CardContent>
@@ -273,32 +273,32 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Proven Results</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Resultados Comprovados</h2>
             <p className="text-lg text-muted-foreground">
-              Enterprise-grade performance with measurable business impact
+              Performance de nível empresarial com impacto comercial mensurável
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
-              <div className="text-4xl font-bold sofia-gradient-text mb-2">99.9%</div>
-              <div className="text-lg font-semibold mb-2">Uptime Target</div>
-              <div className="text-sm text-muted-foreground">Enterprise-grade reliability</div>
-            </div>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-secondary/10 to-secondary/5 border border-secondary/20">
-              <div className="text-4xl font-bold sofia-gradient-text mb-2">&lt; 2s</div>
-              <div className="text-lg font-semibold mb-2">Response Time</div>
-              <div className="text-sm text-muted-foreground">Lightning-fast processing</div>
-            </div>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20">
-              <div className="text-4xl font-bold sofia-gradient-text mb-2">100%</div>
-              <div className="text-lg font-semibold mb-2">AP2 Compliance</div>
-              <div className="text-sm text-muted-foreground">Full protocol implementation</div>
-            </div>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
-              <div className="text-4xl font-bold sofia-gradient-text mb-2">90%+</div>
-              <div className="text-lg font-semibold mb-2">Churn Reduction</div>
-              <div className="text-sm text-muted-foreground">Measured business impact</div>
+            <div className="text-center p-6 rounded-xl sofia-gradient-soft border border-purple-200">
+              <div className="text-4xl font-bold text-white mb-2">99.9%</div>
+              <div className="text-lg font-semibold mb-2 text-white">Meta de Uptime</div>
+              <div className="text-sm text-white/80">Confiabilidade de nível empresarial</div>
+                    </div>
+            <div className="text-center p-6 rounded-xl sofia-gradient border border-purple-300">
+              <div className="text-4xl font-bold text-white mb-2">&lt; 2s</div>
+              <div className="text-lg font-semibold mb-2 text-white">Tempo de Resposta</div>
+              <div className="text-sm text-white/80">Processamento ultrarrápido</div>
+                  </div>
+            <div className="text-center p-6 rounded-xl sofia-gradient-warm border border-purple-400">
+              <div className="text-4xl font-bold text-white mb-2">100%</div>
+              <div className="text-lg font-semibold mb-2 text-white">Conformidade AP2</div>
+              <div className="text-sm text-white/80">Implementação completa do protocolo</div>
+                    </div>
+            <div className="text-center p-6 rounded-xl sofia-gradient-cool border border-purple-500">
+              <div className="text-4xl font-bold text-white mb-2">90%+</div>
+              <div className="text-lg font-semibold mb-2 text-white">Redução de Churn</div>
+              <div className="text-sm text-white/80">Impacto comercial mensurável</div>
             </div>
           </div>
         </div>
@@ -311,55 +311,55 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">How to Test sofIA</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Como Testar sofIA</h2>
             <p className="text-lg text-muted-foreground">
-              Three simple ways to get started with sofIA - from quick tests to full WhatsApp integration
+              Três maneiras simples de começar com sofIA - de testes rápidos à integração completa do WhatsApp
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 text-center">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Terminal className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">Quick Test (30 seconds)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Run tests with mock data - no setup required</p>
-              <div className="bg-muted rounded-lg p-3 mb-4">
+            <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Terminal className="w-6 h-6 text-purple-600" />
+                  </div>
+              <h3 className="font-semibold mb-2">Teste Rápido (30 segundos)</h3>
+              <p className="text-sm text-muted-foreground mb-4">Execute testes com dados simulados - nenhuma configuração necessária</p>
+              <div className="bg-purple-50 rounded-lg p-3 mb-4">
                 <code className="text-xs">python run_tests.py --mode quick</code>
-              </div>
-              <Button size="sm" className="w-full">
-                <Terminal className="w-4 h-4 mr-2" />
-                Run Quick Test
-              </Button>
+                </div>
+              <Button size="sm" className="w-full sofia-purple">
+                  <Terminal className="w-4 h-4 mr-2" />
+                Executar Teste Rápido
+                </Button>
             </Card>
 
-            <Card className="p-6 text-center">
-              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Play className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="font-semibold mb-2">Demo Mode (1 minute)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Complete AP2 payment flow simulation</p>
-              <div className="bg-muted rounded-lg p-3 mb-4">
+            <Card className="p-6 text-center bg-gradient-to-br from-purple-100/50 to-purple-200/50 border-purple-300">
+              <div className="w-12 h-12 bg-purple-200 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Play className="w-6 h-6 text-purple-700" />
+                </div>
+              <h3 className="font-semibold mb-2">Modo Demo (1 minuto)</h3>
+              <p className="text-sm text-muted-foreground mb-4">Simulação completa do fluxo de pagamento AP2</p>
+              <div className="bg-purple-100 rounded-lg p-3 mb-4">
                 <code className="text-xs">uv run app.py demo</code>
-              </div>
-              <Button size="sm" variant="outline" className="w-full">
+          </div>
+              <Button size="sm" variant="outline" className="w-full border-purple-400 text-purple-600 hover:bg-purple-50">
                 <Play className="w-4 h-4 mr-2" />
-                Start Demo
-              </Button>
+                Iniciar Demo
+                </Button>
             </Card>
 
-            <Card className="p-6 text-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="font-semibold mb-2">WhatsApp Integration (5 minutes)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Real-time testing with your WhatsApp account</p>
-              <div className="bg-muted rounded-lg p-3 mb-4">
+            <Card className="p-6 text-center bg-gradient-to-br from-purple-200/50 to-purple-300/50 border-purple-400">
+              <div className="w-12 h-12 bg-purple-300 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <MessageSquare className="w-6 h-6 text-purple-800" />
+          </div>
+              <h3 className="font-semibold mb-2">Integração WhatsApp (5 minutos)</h3>
+              <p className="text-sm text-muted-foreground mb-4">Teste em tempo real com sua conta do WhatsApp</p>
+              <div className="bg-purple-200 rounded-lg p-3 mb-4">
                 <code className="text-xs">npm start && uv run app.py</code>
               </div>
-              <Button size="sm" variant="outline" className="w-full">
+              <Button size="sm" variant="outline" className="w-full border-purple-500 text-purple-700 hover:bg-purple-100">
                 <MessageSquare className="w-4 h-4 mr-2" />
-                Setup Guide
+                Guia de Configuração
               </Button>
             </Card>
           </div>
@@ -370,10 +370,10 @@ export default function HomePage() {
 
 
       {/* Integration Logos */}
-      <section className="py-12 px-4 bg-muted/30">
+      <section className="py-12 px-4 bg-gradient-to-r from-purple-100/30 to-purple-200/20">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
-            <p className="text-muted-foreground">Built with industry-leading technologies and protocols</p>
+            <p className="text-muted-foreground">Construído com tecnologias e protocolos líderes da indústria</p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             <Badge variant="outline" className="px-4 py-2">
@@ -415,56 +415,56 @@ export default function HomePage() {
                 </div>
                 <span className="text-2xl font-bold text-primary">sofIA</span>
               </div>
-              <p className="text-muted-foreground mb-4">Transform WhatsApp into your payment gateway with AP2 protocol compliance.</p>
+              <p className="text-muted-foreground mb-4">Transforme o WhatsApp em sua gateway de pagamento com conformidade ao protocolo AP2.</p>
               <Badge variant="outline" className="mb-2">
                 <Cpu className="w-4 h-4 mr-1" />
                 HACKTUDO 2025
-              </Badge>
+                </Badge>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
+              <h3 className="font-semibold mb-4">Links Rápidos</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <Link href="#features" className="hover:text-foreground transition-colors">
-                    Features
+                    Recursos
                   </Link>
                 </li>
                 <li>
                   <Link href="#pricing" className="hover:text-foreground transition-colors">
-                    Pricing
+                    Preços
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-foreground transition-colors">
-                    Documentation
+                    Documentação
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-foreground transition-colors">
-                    Source Code
+                    Código Fonte
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Get Started</h3>
+              <h3 className="font-semibold mb-4">Começar Agora</h3>
               <div className="space-y-3">
                 <Button size="sm" className="w-full">
                   <Play className="w-4 h-4 mr-2" />
-                  Start Free Trial
+                  Iniciar Teste Grátis
                 </Button>
                 <Button variant="outline" size="sm" className="w-full">
                   <Download className="w-4 h-4 mr-2" />
-                  Download Code
+                  Baixar Código
                 </Button>
               </div>
             </div>
           </div>
 
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 sofIA - HACKTUDO 2025. Built for BEMOBI integration across LATAM, Africa, and Asia markets.</p>
+            <p>&copy; 2025 sofIA - HACKTUDO 2025. Construído para integração BEMOBI em mercados LATAM, África e Ásia.</p>
           </div>
         </div>
       </footer>
