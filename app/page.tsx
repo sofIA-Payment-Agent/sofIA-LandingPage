@@ -74,72 +74,75 @@ export default function HomePage() {
                 {/* Main Headline */}
                 <div className="mb-8">
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-balance leading-[0.9] tracking-tight text-gray-900">
-                    <span className="block">Transforme</span>
-                    <span className="block sofia-gradient-text-cool">o WhatsApp</span>
-                    <span className="block">em seu</span>
-                    <span className="block sofia-gradient-text-warm">Gateway de</span>
-                    <span className="block sofia-gradient-text-cool">Pagamento</span>
+                    <span className="block">O Futuro dos</span>
+                    <span className="block text-purple-600">Pagamentos é</span>
+                    <span className="block text-purple-600">uma Conversa</span>
                   </h1>
                 </div>
                 
                 {/* Description */}
                 <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                  sofIA permite <span className="font-bold text-purple-700">pagamentos seguros</span> através do WhatsApp usando o <span className="font-bold text-purple-700">Protocolo AP2 do Google</span>. Construído para comerciantes BEMOBI em toda LATAM, África e Ásia.
+                  Experimente o primeiro sistema de pagamento multi-agente compatível com AP2 do mundo. Processe <span className="font-bold text-purple-700">pagamentos seguros e conversacionais</span> através do WhatsApp em <span className="font-bold text-purple-700">30 segundos</span>. Sem apps. Sem formulários. Apenas comércio puro.
                 </p>
                 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                   <Button 
                     size="lg" 
-                    className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 shadow-xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
-                  >
-                    <Play className="mr-3 w-6 h-6" />
-                    Iniciar Teste Grátis
-                    <ArrowRight className="ml-3 w-6 h-6" />
-                  </Button>
-                  <Button 
-                    size="lg" 
                     className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-xl hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
                     onClick={() => startSofiaChat()}
                   >
                     <MessageSquare className="mr-3 w-6 h-6" />
-                    Chat com sofIA
+                    See It In Action
                   </Button>
                 </div>
 
-                {/* Key Stats */}
+                {/* Key Features */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto lg:mx-0">
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-cool mb-1">99%+</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Taxa de Sucesso</div>
+                  <div className="text-center p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
+                    <div className="text-xl md:text-2xl font-black text-purple-600 mb-1">AP2</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Protocolo Oficial</div>
                   </div>
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">&lt; 2s</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Tempo de Resposta</div>
+                  <div className="text-center p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
+                    <div className="text-xl md:text-2xl font-black text-purple-600 mb-1">30s</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Transações</div>
                   </div>
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-cool mb-1">99.9%</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Uptime</div>
+                  <div className="text-center p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
+                    <div className="text-xl md:text-2xl font-black text-purple-600 mb-1">0</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Apps Necessários</div>
                   </div>
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">90%</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Redução de Abandono</div>
+                  <div className="text-center p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
+                    <div className="text-xl md:text-2xl font-black text-purple-600 mb-1">Global</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Pagamentos</div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Side - Video Placeholder */}
+              {/* Right Side - sofIA Character Image */}
               <div>
-                <div className="relative">
-                  {/* Video Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl border-2 border-purple-300 shadow-2xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Play className="w-8 h-8 text-white ml-1" />
-                      </div>
-                      <p className="text-purple-700 font-semibold text-lg">Video Placeholder</p>
-                      <p className="text-purple-600 text-sm">Your video will go here</p>
-                    </div>
+                <div className="relative ">
+                  {/* sofIA Character */}
+                  <div 
+                    className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center overflow-hidden p-8 min-h-[1000px]"
+                    style={{
+                      backgroundImage: 'url(/MacacaSemFundo.png)',
+                      backgroundSize: 'contain',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: 'center'
+                    }}
+                  >
+                    <img 
+                      src="/MacacaSemFundo.png" 
+                      alt="sofIA Character" 
+                      className="w-full h-auto max-h-[500px] object-contain"
+                      style={{width: '100%', height: 'auto'}}
+                      onLoad={() => console.log('sofIA character image loaded successfully')}
+                      onError={(e) => {
+                        console.error('sofIA character image failed to load:', e);
+                        console.log('Trying fallback to macacaProfile.png');
+                        e.currentTarget.src = '/macacaProfile.png';
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -199,7 +202,7 @@ export default function HomePage() {
                     <AlertTriangle className="w-6 h-6 text-red-600 mr-3" />
                     <h3 className="text-lg font-bold text-red-800">O Problema que Resolvemos</h3>
                   </div>
-                  <p className="text-lg text-red-700 font-bold mb-2">70% dos clientes abandonam checkouts online. Isso é um problema de $2.8 trilhões.</p>
+                  <p className="text-lg text-red-700 font-bold mb-2">Muitos clientes abandonam checkouts online devido a processos complexos e inseguros.</p>
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex items-center text-red-600">
                       <span className="mr-2">❌</span>
@@ -258,16 +261,16 @@ export default function HomePage() {
                     <div className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Protocolo AP2 Oficial</div>
                   </div>
                   <div className="text-center p-4 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-2xl font-black text-purple-600 mb-1">50+</div>
-                    <div className="text-sm font-semibold text-purple-700 uppercase tracking-wide">Merchants Prontos</div>
+                    <div className="text-2xl font-black text-purple-600 mb-1">Multi</div>
+                    <div className="text-sm font-semibold text-purple-700 uppercase tracking-wide">Agente IA</div>
                   </div>
                   <div className="text-center p-4 bg-green-50 rounded-xl border border-green-200">
-                    <div className="text-2xl font-black text-green-600 mb-1">$1M+</div>
-                    <div className="text-sm font-semibold text-green-700 uppercase tracking-wide">Volume Mensal</div>
+                    <div className="text-2xl font-black text-green-600 mb-1">30s</div>
+                    <div className="text-sm font-semibold text-green-700 uppercase tracking-wide">Transações</div>
                   </div>
                   <div className="text-center p-4 bg-orange-50 rounded-xl border border-orange-200">
-                    <div className="text-2xl font-black text-orange-600 mb-1">4.5★</div>
-                    <div className="text-sm font-semibold text-orange-700 uppercase tracking-wide">Satisfação</div>
+                    <div className="text-2xl font-black text-orange-600 mb-1">0</div>
+                    <div className="text-sm font-semibold text-orange-700 uppercase tracking-wide">Apps</div>
                   </div>
                 </div>
 
@@ -413,7 +416,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-red-600">O Problema que Resolvemos</h3>
                   <div className="bg-red-50 rounded-2xl p-4 border border-red-200 mb-4">
-                    <p className="text-lg text-red-700 font-bold mb-2">70% dos clientes abandonam checkouts online. Isso é um problema de $2.8 trilhões.</p>
+                    <p className="text-lg text-red-700 font-bold mb-2">Muitos clientes abandonam checkouts online devido a processos complexos e inseguros.</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       Sistemas de pagamento tradicionais estão quebrados, causando perda massiva de receita para empresas em todo o mundo.
                     </p>
@@ -442,12 +445,12 @@ export default function HomePage() {
                   {/* Problem Stats */}
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="bg-red-100 rounded-lg p-3 border border-red-200">
-                      <div className="text-2xl font-bold text-red-600 mb-1">70%</div>
+                      <div className="text-2xl font-bold text-red-600 mb-1">Alto</div>
                       <div className="text-red-700 font-semibold">Abandono de Checkout</div>
                     </div>
                     <div className="bg-red-100 rounded-lg p-3 border border-red-200">
-                      <div className="text-2xl font-bold text-red-600 mb-1">$2.8T</div>
-                      <div className="text-red-700 font-semibold">Problema Global</div>
+                      <div className="text-2xl font-bold text-red-600 mb-1">Global</div>
+                      <div className="text-red-700 font-semibold">Problema de Mercado</div>
                     </div>
                   </div>
                 </CardContent>
@@ -496,8 +499,8 @@ export default function HomePage() {
                   {/* Solution Stats */}
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="bg-green-100 rounded-lg p-3 border border-green-200">
-                      <div className="text-2xl font-bold text-green-600 mb-1">90%</div>
-                      <div className="text-green-700 font-semibold">Redução de Abandono</div>
+                      <div className="text-2xl font-bold text-green-600 mb-1">Menos</div>
+                      <div className="text-green-700 font-semibold">Abandono de Checkout</div>
                     </div>
                     <div className="bg-green-100 rounded-lg p-3 border border-green-200">
                       <div className="text-2xl font-bold text-green-600 mb-1">30s</div>
@@ -521,13 +524,13 @@ export default function HomePage() {
             
             {/* Title Section */}
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-gray-900">Resultados Revolucionários</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-gray-900">Vantagens Principais</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-                Dados reais que comprovam o impacto transformador do sofIA no mercado de pagamentos
+                Recursos únicos que fazem do sofIA a solução ideal para pagamentos conversacionais
               </p>
             </div>
             
-            {/* Business Impact Stats */}
+            {/* Key Benefits */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6 text-center">
@@ -536,9 +539,9 @@ export default function HomePage() {
                       <BarChart3 className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <div className="text-3xl font-black text-green-600 mb-2">$10M+</div>
-                  <div className="text-green-700 font-bold text-sm mb-1">Potencial ARR</div>
-                  <div className="text-xs text-gray-600">Oportunidade massiva de receita</div>
+                  <div className="text-3xl font-black text-green-600 mb-2">AP2</div>
+                  <div className="text-green-700 font-bold text-sm mb-1">Protocolo Oficial</div>
+                  <div className="text-xs text-gray-600">Primeira implementação no mercado</div>
                 </CardContent>
               </Card>
 
@@ -549,9 +552,9 @@ export default function HomePage() {
                       <Users className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <div className="text-3xl font-black text-blue-600 mb-2">50+</div>
-                  <div className="text-blue-700 font-bold text-sm mb-1">Comerciantes</div>
-                  <div className="text-xs text-gray-600">Prontos para os primeiros 6 meses</div>
+                  <div className="text-3xl font-black text-blue-600 mb-2">Multi</div>
+                  <div className="text-blue-700 font-bold text-sm mb-1">Agente</div>
+                  <div className="text-xs text-gray-600">Arquitetura inteligente</div>
                 </CardContent>
               </Card>
 
@@ -562,9 +565,9 @@ export default function HomePage() {
                       <Zap className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <div className="text-3xl font-black text-purple-600 mb-2">$1M+</div>
-                  <div className="text-purple-700 font-bold text-sm mb-1">Volume Mensal</div>
-                  <div className="text-xs text-gray-600">Processamento escalável de transações</div>
+                  <div className="text-3xl font-black text-purple-600 mb-2">30s</div>
+                  <div className="text-purple-700 font-bold text-sm mb-1">Transações</div>
+                  <div className="text-xs text-gray-600">Processamento conversacional</div>
                 </CardContent>
               </Card>
 
@@ -575,9 +578,9 @@ export default function HomePage() {
                       <CheckCircle className="w-6 h-6 text-white" />
                     </div>
                   </div>
-                  <div className="text-3xl font-black text-orange-600 mb-2">4.5+</div>
-                  <div className="text-orange-700 font-bold text-sm mb-1">Avaliação</div>
-                  <div className="text-xs text-gray-600">Satisfação excepcional dos comerciantes</div>
+                  <div className="text-3xl font-black text-orange-600 mb-2">0</div>
+                  <div className="text-orange-700 font-bold text-sm mb-1">Apps</div>
+                  <div className="text-xs text-gray-600">Nenhum download necessário</div>
                 </CardContent>
               </Card>
             </div>
@@ -591,8 +594,8 @@ export default function HomePage() {
               
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-4xl font-black text-green-600 mb-2">90%</div>
-                  <div className="text-green-700 font-bold text-sm mb-1">Menos Checkouts Abandonados</div>
+                  <div className="text-4xl font-black text-green-600 mb-2">Menos</div>
+                  <div className="text-green-700 font-bold text-sm mb-1">Checkouts Abandonados</div>
                   <div className="text-xs text-gray-600">vs sistemas tradicionais</div>
                 </div>
                 <div className="text-center">
@@ -601,8 +604,8 @@ export default function HomePage() {
                   <div className="text-xs text-gray-600">necessários</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-black text-purple-600 mb-2">100%</div>
-                  <div className="text-purple-700 font-bold text-sm mb-1">Conformidade AP2</div>
+                  <div className="text-4xl font-black text-purple-600 mb-2">AP2</div>
+                  <div className="text-purple-700 font-bold text-sm mb-1">Conformidade Total</div>
                   <div className="text-xs text-gray-600">Primeiro no mercado</div>
                 </div>
               </div>
@@ -836,15 +839,15 @@ export default function HomePage() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700"><strong>99.9% de uptime</strong> - Confiabilidade de nível empresarial</span>
+                    <span className="text-gray-700"><strong>Alta disponibilidade</strong> - Confiabilidade de nível empresarial</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700"><strong>&lt; 2 segundos</strong> - Processamento ultrarrápido</span>
+                    <span className="text-gray-700"><strong>Processamento rápido</strong> - Transações em tempo real</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700"><strong>100% conformidade AP2</strong> - Primeira implementação no mercado</span>
+                    <span className="text-gray-700"><strong>Conformidade AP2</strong> - Primeira implementação no mercado</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
@@ -861,6 +864,36 @@ export default function HomePage() {
                   <p className="text-purple-700 leading-relaxed">
                     Implementação completa com monitoramento, logs de auditoria e suporte 24/7 para operadoras de telecomunicações.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Separator */}
+      <div className="h-1 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
+
+      {/* Section 6: Video Container */}
+      <section className="full-screen-section bg-gradient-to-br from-purple-50 to-purple-100/50">
+        <div className="full-screen-content">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Veja sofIA em Ação</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Assista ao vídeo demonstrativo e veja como sofIA transforma conversas do WhatsApp em pagamentos seguros
+              </p>
+            </div>
+
+            <div className="relative">
+              {/* Video Container */}
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl border-2 border-purple-300 shadow-2xl flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <Play className="w-10 h-10 text-white ml-1" />
+                  </div>
+                  <p className="text-purple-700 font-semibold text-xl mb-2">Vídeo Demonstrativo</p>
+                  <p className="text-purple-600 text-lg">Veja sofIA processando pagamentos em tempo real</p>
                 </div>
               </div>
             </div>
