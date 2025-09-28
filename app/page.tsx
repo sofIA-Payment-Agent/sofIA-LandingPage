@@ -110,20 +110,20 @@ export default function HomePage() {
                 {/* Key Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto lg:mx-0">
                   <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
+                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-cool mb-1">99%+</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Taxa de Sucesso</div>
+                  </div>
+                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
+                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">&lt; 2s</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Tempo de Resposta</div>
+                  </div>
+                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
                     <div className="text-xl md:text-2xl font-black sofia-gradient-text-cool mb-1">99.9%</div>
                     <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Uptime</div>
                   </div>
                   <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">&lt; 2s</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Resposta</div>
-                  </div>
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-cool mb-1">100%</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">AP2</div>
-                  </div>
-                  <div className="text-center p-3 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">90%+</div>
-                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Menos Churn</div>
+                    <div className="text-xl md:text-2xl font-black sofia-gradient-text-warm mb-1">90%</div>
+                    <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Redução de Abandono</div>
                   </div>
                 </div>
               </div>
@@ -255,41 +255,22 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto lg:mx-0 mb-8">
                   <div className="text-center p-4 bg-blue-50 rounded-xl border border-blue-200">
                     <div className="text-2xl font-black text-blue-600 mb-1">GOOGLE</div>
-                    <div className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Protocolo Oficial</div>
+                    <div className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Protocolo AP2 Oficial</div>
                   </div>
                   <div className="text-center p-4 bg-purple-50 rounded-xl border border-purple-200">
-                    <div className="text-2xl font-black text-purple-600 mb-1">60+</div>
-                    <div className="text-sm font-semibold text-purple-700 uppercase tracking-wide">Empresas Globais</div>
+                    <div className="text-2xl font-black text-purple-600 mb-1">50+</div>
+                    <div className="text-sm font-semibold text-purple-700 uppercase tracking-wide">Merchants Prontos</div>
                   </div>
                   <div className="text-center p-4 bg-green-50 rounded-xl border border-green-200">
-                    <div className="text-2xl font-black text-green-600 mb-1">MASTERCARD</div>
-                    <div className="text-sm font-semibold text-green-700 uppercase tracking-wide">Apoio Oficial</div>
+                    <div className="text-2xl font-black text-green-600 mb-1">$1M+</div>
+                    <div className="text-sm font-semibold text-green-700 uppercase tracking-wide">Volume Mensal</div>
                   </div>
                   <div className="text-center p-4 bg-orange-50 rounded-xl border border-orange-200">
-                    <div className="text-2xl font-black text-orange-600 mb-1">PAYPAL</div>
-                    <div className="text-sm font-semibold text-orange-700 uppercase tracking-wide">Parceiro Estratégico</div>
+                    <div className="text-2xl font-black text-orange-600 mb-1">4.5★</div>
+                    <div className="text-sm font-semibold text-orange-700 uppercase tracking-wide">Satisfação</div>
                   </div>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Button 
-                    size="lg" 
-                    className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
-                  >
-                    <Play className="mr-3 w-6 h-6" />
-                    Ver em Ação
-                    <ArrowRight className="ml-3 w-6 h-6" />
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-xl hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
-                    onClick={() => startSofiaChat()}
-                  >
-                    <MessageSquare className="mr-3 w-6 h-6" />
-                    Iniciar Teste Grátis
-                  </Button>
-                </div>
               </div>
 
               {/* Right Side - sofIA Chat Demo */}
@@ -297,9 +278,26 @@ export default function HomePage() {
                 <div className="relative">
                   {/* Chat Screenshot */}
                   <div className="bg-white rounded-2xl border-2 border-gray-200 shadow-2xl p-6">
-                    <div className="bg-green-500 text-white p-3 rounded-t-xl flex items-center space-x-2 mb-4">
-                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                        <MessageSquare className="w-5 h-5 text-green-500" />
+                    <div className="bg-purple-500 text-white p-3 rounded-t-xl flex items-center space-x-2 mb-4">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden border border-gray-200">
+                        <img 
+                          src="/macacaProfile.png" 
+                          alt="sofIA Profile" 
+                          className="w-full h-full object-cover rounded-full"
+                          style={{width: '100%', height: '100%'}}
+                          onLoad={() => console.log('Image loaded successfully')}
+                          onError={(e) => {
+                            console.error('Image failed to load:', e);
+                            e.currentTarget.style.display = 'none';
+                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (nextElement) {
+                              nextElement.style.display = 'flex';
+                            }
+                          }}
+                        />
+                        <div className="w-full h-full bg-purple-100 rounded-full flex items-center justify-center" style={{display: 'none'}}>
+                          <MessageSquare className="w-4 h-4 text-purple-500" />
+                        </div>
                       </div>
                       <div>
                         <div className="font-bold text-sm">sofIA</div>
@@ -349,14 +347,7 @@ export default function HomePage() {
                         <div className="text-xs text-gray-500 mt-1">14:34</div>
                       </div>
                     </div>
-                    
-                    {/* Protocol Badge */}
-                    <div className="mt-4 text-center">
-                      <Badge variant="outline" className="px-4 py-2 bg-blue-50 border-blue-200 text-blue-700">
-                        <Shield className="w-4 h-4 mr-2" />
-                        Protocolo AP2 do Google
-                      </Badge>
-                    </div>
+
                   </div>
                   
                   {/* Floating Elements */}
@@ -408,24 +399,6 @@ export default function HomePage() {
                 Entenda o desafio global dos pagamentos online e como sofIA revoluciona a experiência
               </p>
               
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg" 
-                  className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
-                >
-                  <Play className="mr-3 w-6 h-6" />
-                  Ver em Ação
-                </Button>
-                <Button 
-                  size="lg" 
-                  className="text-lg px-8 py-6 font-bold bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-xl hover:shadow-green-500/25 transform hover:scale-105 transition-all duration-300"
-                  onClick={() => startSofiaChat()}
-                >
-                  <MessageSquare className="mr-3 w-6 h-6" />
-                  Iniciar Teste Grátis
-                </Button>
-              </div>
             </div>
             
             {/* Main Content Cards */}
@@ -523,12 +496,12 @@ export default function HomePage() {
                   {/* Solution Stats */}
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="bg-green-100 rounded-lg p-3 border border-green-200">
-                      <div className="text-2xl font-bold text-green-600 mb-1">99%+</div>
-                      <div className="text-green-700 font-semibold">Taxa de Sucesso</div>
+                      <div className="text-2xl font-bold text-green-600 mb-1">90%</div>
+                      <div className="text-green-700 font-semibold">Redução de Abandono</div>
                     </div>
                     <div className="bg-green-100 rounded-lg p-3 border border-green-200">
-                      <div className="text-2xl font-bold text-green-600 mb-1">&lt; 2s</div>
-                      <div className="text-green-700 font-semibold">Tempo de Resposta</div>
+                      <div className="text-2xl font-bold text-green-600 mb-1">30s</div>
+                      <div className="text-green-700 font-semibold">Transações Completas</div>
                     </div>
                   </div>
                 </CardContent>
@@ -541,6 +514,106 @@ export default function HomePage() {
       {/* Section Separator */}
       <div className="h-1 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
 
+      {/* Section 2.5: Business Impact */}
+      <section className="full-screen-section bg-gradient-to-br from-green-50 via-white to-blue-50">
+        <div className="full-screen-content">
+          <div className="max-w-7xl mx-auto h-full flex flex-col justify-center">
+            
+            {/* Title Section */}
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-gray-900">Resultados Revolucionários</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
+                Dados reais que comprovam o impacto transformador do sofIA no mercado de pagamentos
+              </p>
+            </div>
+            
+            {/* Business Impact Stats */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                      <BarChart3 className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-black text-green-600 mb-2">$10M+</div>
+                  <div className="text-green-700 font-bold text-sm mb-1">Potencial ARR</div>
+                  <div className="text-xs text-gray-600">Oportunidade massiva de receita</div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-black text-blue-600 mb-2">50+</div>
+                  <div className="text-blue-700 font-bold text-sm mb-1">Comerciantes</div>
+                  <div className="text-xs text-gray-600">Prontos para os primeiros 6 meses</div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-black text-purple-600 mb-2">$1M+</div>
+                  <div className="text-purple-700 font-bold text-sm mb-1">Volume Mensal</div>
+                  <div className="text-xs text-gray-600">Processamento escalável de transações</div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                      <CheckCircle className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-black text-orange-600 mb-2">4.5+</div>
+                  <div className="text-orange-700 font-bold text-sm mb-1">Avaliação</div>
+                  <div className="text-xs text-gray-600">Satisfação excepcional dos comerciantes</div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Performance Comparison */}
+            <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl p-8 border border-green-200">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Vantagem Competitiva</h3>
+                <p className="text-lg text-gray-700">Comparado aos sistemas de pagamento tradicionais</p>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-4xl font-black text-green-600 mb-2">90%</div>
+                  <div className="text-green-700 font-bold text-sm mb-1">Menos Checkouts Abandonados</div>
+                  <div className="text-xs text-gray-600">vs sistemas tradicionais</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-black text-blue-600 mb-2">0</div>
+                  <div className="text-blue-700 font-bold text-sm mb-1">Downloads de Apps</div>
+                  <div className="text-xs text-gray-600">necessários</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-black text-purple-600 mb-2">100%</div>
+                  <div className="text-purple-700 font-bold text-sm mb-1">Conformidade AP2</div>
+                  <div className="text-xs text-gray-600">Primeiro no mercado</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Separator */}
+      <div className="h-1 bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+
       {/* Section 3: Key Features */}
       <section id="features" className="full-screen-section bg-gradient-to-br from-purple-50/30 to-purple-100/20">
         <div className="full-screen-content">
@@ -552,74 +625,74 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Shield className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <Shield className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Conformidade com Protocolo AP2</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Conformidade com Protocolo AP2</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Implementação completa do mais recente protocolo de pagamento do Google com segurança de nível empresarial
                   </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <MessageSquare className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <MessageSquare className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Integração WhatsApp</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Integração WhatsApp</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Nenhum download de app necessário - clientes pagam diretamente através de conversas no WhatsApp
                   </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <Users className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Arquitetura Multi-Agente</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Arquitetura Multi-Agente</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Orquestração sofisticada de IA para fluxos de trabalho de pagamento complexos e atendimento ao cliente
                   </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Globe className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <Globe className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Suporte Regional</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Suporte Regional</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Métodos de pagamento LATAM, África, Ásia - PIX, Mobile Money, Carteiras Digitais
                   </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Zap className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <Zap className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Processamento em Tempo Real</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Processamento em Tempo Real</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Tempos de resposta &lt; 2 segundos com trilhas de auditoria completas e monitoramento
                   </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="border-0 shadow-sm hover:shadow-md transition-all duration-300 bg-white hover:border-purple-200">
-                <CardHeader className="p-6">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Shield className="w-6 h-6 text-purple-600" />
+                <CardHeader className="p-8">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                    <Shield className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 mb-3">Segurança em Primeiro Lugar</CardTitle>
-                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                  <CardTitle className="text-xl font-bold text-gray-900 mb-4">Segurança em Primeiro Lugar</CardTitle>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     Assinaturas digitais RSA-2048 e segurança de nível empresarial para todas as transações
                   </CardDescription>
                 </CardHeader>
@@ -702,9 +775,9 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">Resultado: 90%+ Redução de Churn</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">Simples, Rápido e Seguro</h3>
                 <p className="text-lg text-purple-700 leading-relaxed max-w-2xl mx-auto">
-                  Clientes que recebem notificações automáticas no WhatsApp têm 90% mais chances de renovar suas assinaturas
+                  É tão fácil quanto parece - qualquer pessoa pode usar sofIA para transformar conversas em pagamentos automáticos
                 </p>
               </div>
             </div>
@@ -763,15 +836,19 @@ export default function HomePage() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700">99.9% de uptime garantido</span>
+                    <span className="text-gray-700"><strong>99.9% de uptime</strong> - Confiabilidade de nível empresarial</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700">Processamento em tempo real</span>
+                    <span className="text-gray-700"><strong>&lt; 2 segundos</strong> - Processamento ultrarrápido</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-700">Conformidade total com AP2</span>
+                    <span className="text-gray-700"><strong>100% conformidade AP2</strong> - Primeira implementação no mercado</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span className="text-gray-700"><strong>Assinaturas RSA-2048</strong> - Segurança de nível bancário</span>
                   </div>
                 </div>
               </div>
