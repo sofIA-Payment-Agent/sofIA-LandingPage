@@ -42,7 +42,7 @@ export default function HomePage() {
             <Cpu className="w-4 h-4 mr-2" />
             HACKTUDO 2025 - Production-Ready
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance sofia-gradient-text-warm">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance sofia-gradient-text-warm leading-tight">
             Transforme o WhatsApp em Sua Gateway de Pagamento
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto text-pretty">
@@ -209,159 +209,76 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Target Customer Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-100/50 to-purple-200/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Construído para Líderes da Indústria</h2>
-            <p className="text-lg text-muted-foreground">
-              Projetado especificamente para BEMOBI e grandes operadoras de telecomunicações
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-2xl sofia-gradient-text-cool">Principal: BEMOBI</CardTitle>
-                <CardDescription className="text-lg">Provedor de Gateway de Pagamento Móvel</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span>Nova oportunidade de fluxo de receita</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span>Diferenciação competitiva</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span>Custos de suporte reduzidos</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-purple-100/50 to-purple-200/50 border-purple-300">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-2xl sofia-gradient-text-warm">Secundário: Operadoras de Telecom</CardTitle>
-                <CardDescription className="text-lg">VIVO, CLARO, OI, TIM</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-700" />
-                    <span>Redução de churn de 90%+</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-700" />
-                    <span>Integração perfeita com WhatsApp</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-purple-700" />
-                    <span>Garantia de conformidade AP2</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* Social Proof Section */}
+
+
+      {/* How to Use sofIA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Resultados Comprovados</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Como Usar sofIA</h2>
             <p className="text-lg text-muted-foreground">
-              Performance de nível empresarial com impacto comercial mensurável
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-xl sofia-gradient-soft border border-purple-200">
-              <div className="text-4xl font-bold text-white mb-2">99.9%</div>
-              <div className="text-lg font-semibold mb-2 text-white">Meta de Uptime</div>
-              <div className="text-sm text-white/80">Confiabilidade de nível empresarial</div>
-                    </div>
-            <div className="text-center p-6 rounded-xl sofia-gradient border border-purple-300">
-              <div className="text-4xl font-bold text-white mb-2">&lt; 2s</div>
-              <div className="text-lg font-semibold mb-2 text-white">Tempo de Resposta</div>
-              <div className="text-sm text-white/80">Processamento ultrarrápido</div>
-                  </div>
-            <div className="text-center p-6 rounded-xl sofia-gradient-warm border border-purple-400">
-              <div className="text-4xl font-bold text-white mb-2">100%</div>
-              <div className="text-lg font-semibold mb-2 text-white">Conformidade AP2</div>
-              <div className="text-sm text-white/80">Implementação completa do protocolo</div>
-                    </div>
-            <div className="text-center p-6 rounded-xl sofia-gradient-cool border border-purple-500">
-              <div className="text-4xl font-bold text-white mb-2">90%+</div>
-              <div className="text-lg font-semibold mb-2 text-white">Redução de Churn</div>
-              <div className="text-sm text-white/80">Impacto comercial mensurável</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-      {/* How to Test sofIA Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Como Testar sofIA</h2>
-            <p className="text-lg text-muted-foreground">
-              Três maneiras simples de começar com sofIA - de testes rápidos à integração completa do WhatsApp
+              Veja como sofIA transforma conversas do WhatsApp em pagamentos seguros e automáticos
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200">
+            <Card className="p-6 bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Terminal className="w-6 h-6 text-purple-600" />
+                <MessageSquare className="w-6 h-6 text-purple-600" />
                   </div>
-              <h3 className="font-semibold mb-2">Teste Rápido (30 segundos)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Execute testes com dados simulados - nenhuma configuração necessária</p>
-              <div className="bg-purple-50 rounded-lg p-3 mb-4">
-                <code className="text-xs">python run_tests.py --mode quick</code>
+              <h3 className="font-semibold mb-2 text-center">1. Cliente Recebe Notificação</h3>
+              <p className="text-sm text-muted-foreground mb-4 text-center">
+                sofIA envia automaticamente uma mensagem no WhatsApp quando uma assinatura está prestes a expirar
+                  </p>
+              <div className="bg-white rounded-lg p-4 border shadow-sm">
+                <div className="text-sm text-gray-700">
+                  <strong>sofIA:</strong> "Oi! Sua assinatura VIVO expira em 2 dias. Gostaria de renovar por R$ 29,99?"
                 </div>
-              <Button size="sm" className="w-full sofia-purple">
-                  <Terminal className="w-4 h-4 mr-2" />
-                Executar Teste Rápido
-                </Button>
+                  </div>
             </Card>
 
-            <Card className="p-6 text-center bg-gradient-to-br from-purple-100/50 to-purple-200/50 border-purple-300">
+            <Card className="p-6 bg-gradient-to-br from-purple-100/50 to-purple-200/50 border-purple-300">
               <div className="w-12 h-12 bg-purple-200 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Play className="w-6 h-6 text-purple-700" />
+                <CheckCircle className="w-6 h-6 text-purple-700" />
+                  </div>
+              <h3 className="font-semibold mb-2 text-center">2. Cliente Confirma Pagamento</h3>
+              <p className="text-sm text-muted-foreground mb-4 text-center">
+                O cliente responde "sim" e sofIA processa o pagamento usando o protocolo AP2 do Google
+                  </p>
+              <div className="bg-white rounded-lg p-4 border shadow-sm">
+                <div className="text-sm text-gray-700">
+                  <strong>Cliente:</strong> "Sim, quero renovar"<br/>
+                  <strong>sofIA:</strong> "Perfeito! Processando pagamento..."
                 </div>
-              <h3 className="font-semibold mb-2">Modo Demo (1 minuto)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Simulação completa do fluxo de pagamento AP2</p>
-              <div className="bg-purple-100 rounded-lg p-3 mb-4">
-                <code className="text-xs">uv run app.py demo</code>
-          </div>
-              <Button size="sm" variant="outline" className="w-full border-purple-400 text-purple-600 hover:bg-purple-50">
-                <Play className="w-4 h-4 mr-2" />
-                Iniciar Demo
-                </Button>
+                  </div>
             </Card>
 
-            <Card className="p-6 text-center bg-gradient-to-br from-purple-200/50 to-purple-300/50 border-purple-400">
+            <Card className="p-6 bg-gradient-to-br from-purple-200/50 to-purple-300/50 border-purple-400">
               <div className="w-12 h-12 bg-purple-300 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="w-6 h-6 text-purple-800" />
+                <Shield className="w-6 h-6 text-purple-800" />
+                </div>
+              <h3 className="font-semibold mb-2 text-center">3. Pagamento Processado</h3>
+              <p className="text-sm text-muted-foreground mb-4 text-center">
+                sofIA confirma o pagamento e atualiza automaticamente a assinatura do cliente
+              </p>
+              <div className="bg-white rounded-lg p-4 border shadow-sm">
+                <div className="text-sm text-gray-700">
+                  <strong>sofIA:</strong> "✅ Pagamento aprovado! Sua assinatura foi renovada por mais 30 dias."
           </div>
-              <h3 className="font-semibold mb-2">Integração WhatsApp (5 minutos)</h3>
-              <p className="text-sm text-muted-foreground mb-4">Teste em tempo real com sua conta do WhatsApp</p>
-              <div className="bg-purple-200 rounded-lg p-3 mb-4">
-                <code className="text-xs">npm start && uv run app.py</code>
-              </div>
-              <Button size="sm" variant="outline" className="w-full border-purple-500 text-purple-700 hover:bg-purple-100">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                Guia de Configuração
-              </Button>
+                </div>
             </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="bg-gradient-to-r from-purple-100 to-purple-200 rounded-xl p-8 border border-purple-300">
+              <h3 className="text-xl font-semibold mb-4 sofia-gradient-text-warm">Resultado: 90%+ Redução de Churn</h3>
+              <p className="text-muted-foreground">
+                Clientes que recebem notificações automáticas no WhatsApp têm 90% mais chances de renovar suas assinaturas
+              </p>
+          </div>
           </div>
         </div>
       </section>
