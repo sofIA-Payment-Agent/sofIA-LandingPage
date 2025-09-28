@@ -868,14 +868,15 @@ export default function HomePage() {
 
             <div className="relative">
               {/* Video Container */}
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl border-2 border-purple-300 shadow-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <Play className="w-10 h-10 text-white ml-1" />
-                  </div>
-                  <p className="text-purple-700 font-semibold text-xl mb-2">Vídeo Demonstrativo</p>
-                  <p className="text-purple-600 text-lg">Veja sofIA processando pagamentos em tempo real</p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl border-2 border-purple-300 shadow-2xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/1R4WanIZkEc"
+                  title="sofIA - Demonstração de Pagamentos via WhatsApp"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
